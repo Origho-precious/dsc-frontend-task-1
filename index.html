@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Search App</title>
+	</head>
+	<body>
+		<div class="container">
+			<div id="backdrop"></div>
+			<div class="content">
+				<form>
+				<div id="input-wrapper">
+					<ion-icon name="search-outline" class="search-icon"></ion-icon>
+					<input type="text" placeholder="Search for a part-time job" />
+				</div>
+				<button>
+					<ion-icon name="map-outline" class="map-icon"></ion-icon>
+					<span>Use map</span>
+				</button>
+			</form>
+
+			<section id="categories">
+				<div class="box furniture">
+					<ion-icon name="boat-outline" class="box-icon"></ion-icon>
+					<p>Furniture</p>
+				</div>
+				<div class="box property">
+					<ion-icon class="box-icon" name="home-outline"></ion-icon>
+					<p>Property</p>
+				</div>
+				<div class="box file">
+					<ion-icon class="box-icon" name="newspaper-outline"></ion-icon>
+					<p>File</p>
+				</div>
+				<div class="box travel">
+					<ion-icon class="box-icon" name="airplane-outline"></ion-icon>
+					<p>Travel</p>
+				</div>
+				<div class="box car">
+					<ion-icon class="box-icon" name="car-sport-outline"></ion-icon>
+					<p>Car</p>
+				</div>
+				<div class="box mc">
+					<ion-icon class="box-icon" name="bicycle-outline"></ion-icon>
+					<p>MC</p>
+				</div>
+				<div class="box economy">
+					<ion-icon class="box-icon" name="cash-outline"></ion-icon>
+					<p>Economy</p>
+				</div>
+				<div class="box holiday">
+					<ion-icon class="box-icon" name="boat-outline"></ion-icon>
+					<p>Holiday</p>
+				</div>
+			</section>
+			</div>
+		</div>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>

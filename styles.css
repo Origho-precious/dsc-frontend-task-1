@@ -1,0 +1,157 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#scrnli_recorder_root {
+	display: none;
+}
+
+body {
+	font-family: "Fredoka", sans-serif;
+	line-height: 1.5;
+	padding: 2rem;
+	background: #f8f4ff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	height: max-content;
+	position: relative;
+}
+
+#backdrop {
+	background: #efebfe;
+	height: 510px;
+	width: 350px;
+	position: absolute;
+	top: -60px;
+	border-radius: 15px;
+	z-index: 2;
+	transform: translateX(23%);
+}
+
+.content {
+	position: relative;
+	z-index: 10;
+	background: #fff;
+	width: 510px;
+	padding: 60px 55px;
+	border-radius: 18px;
+	box-shadow: 2px 5px 15px 3px #dfd7fa;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+}
+
+form #input-wrapper {
+	width: 100%;
+	position: relative;
+	margin-right: 0.8rem;
+}
+
+#input-wrapper .search-icon {
+	position: absolute;
+	top: 1.1rem;
+	left: 0.8rem;
+}
+
+input {
+	display: block;
+	border: 1px solid #ccc;
+	outline: none;
+	height: 50px;
+	width: 100%;
+	border-radius: 5px;
+	padding: 0 0.7rem 0 2rem;
+	font-size: 1rem;
+	font-size: 0.9rem;
+}
+
+button {
+	display: flex;
+	background-color: #34255a;
+	color: #fff;
+	border: none;
+	width: 180px;
+	height: 50px;
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+}
+
+form button span {
+	margin-left: 8px;
+}
+
+.map-icon {
+	font-size: 1.1rem;
+}
+
+#categories {
+	margin-top: 1.3rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 0.9rem;
+}
+
+#categories .box {
+	height: 85px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7px;
+}
+
+#categories .box p {
+	margin-top: 3px;
+	font-size: 0.85rem;
+	font-weight: 500;
+	color: #34255a;
+}
+
+#categories .box .box-icon {
+	font-size: 1.5rem;
+}
+
+.furniture {
+	background: #ffecec;
+}
+
+.property {
+	background: #f7ecff;
+}
+
+.file {
+	background: #ecf0ff;
+}
+
+.travel {
+	background: #d8f9f3;
+}
+
+.car {
+	background: #e2fed4;
+}
+
+.mc {
+	background: #ffffff;
+	border: 1px solid #efebfe;
+	box-shadow: 1px 4px 10px 2px #efebfe;
+}
+
+.economy {
+	background: #fff3c9;
+}
+
+.holiday {
+	background: #ffd9c9;
+}
